@@ -18,3 +18,4 @@ while (chute != numeroSecreto) {
   }
   tentativas++;
 }
+console.log("Amo o du");
