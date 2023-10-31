@@ -1,20 +1,14 @@
-alert("Boas vindas ao jogo de adivinhação");
-console.log("O número secreto é 12");
-let numeroSecreto = 12;
+alert("Bem vindo ao jogo de adivinhação");
+let numeroSecreto = 14;
 let chute;
-let tentativas = 1;
 
 while (chute != numeroSecreto) {
-  chute = prompt("Escolha um número entre 0 e 50");
-
+  chute = prompt("Digite um numero de 1 a 15");
   if (chute == numeroSecreto) {
-    alert(
-      `Parabéns, você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`
-    );
-  } else if (chute > numeroSecreto) {
-    alert("Você errou, o número secreto é menor");
+    alert(`Parabés, você descobriu o numero secreto ${chute}`);
+  } else if (chute < numeroSecreto) {
+    alert(`Você errou, o numero secreto é maior que ${chute}`);
   } else {
-    alert("Você errou, o número secreto é maior");
+    alert(`Você errou, o numero secreto é menor que ${chute}`);
   }
-  tentativas++;
 }
